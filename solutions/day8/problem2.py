@@ -23,6 +23,7 @@ base_key = {
     9: None,
 }
 
+
 def get_input(filepath):
     entries = []
     with open(filepath) as f:
@@ -31,6 +32,7 @@ def get_input(filepath):
             entries.append((wiring.split(' '), output.split(' ')))
 
     return entries
+
 
 def main():
     entries = get_input('input.txt')
@@ -67,7 +69,7 @@ def main():
         # The 'two' is leftover
         num_to_letters[2] = five_digits[0]
         letters_to_num[five_digits[0]] = 2
-        
+
         six_digits = set(six_digits)
         # Find the 'nine'
         for six in six_digits:

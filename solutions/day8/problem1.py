@@ -20,6 +20,7 @@ def get_input(filepath):
 
     return entries
 
+
 def main():
     entries = get_input('input.txt')
 
